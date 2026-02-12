@@ -1,0 +1,41 @@
+---
+description: Keep the Python Level 2 course aligned with the official PCAP-31-03 syllabus in Level_2.pdf when designing curriculum, modules, projects, and assessments.
+globs: python-level-2-course/**/*.{md,py}
+alwaysApply: false
+---
+
+# PCAP Level 2 Syllabus Alignment
+
+When working on the **Python Level 2 course** in this repository, always treat `Level_2.pdf` (PCAP-31-03 exam syllabus) as the authoritative reference for required exam topics and terminology.
+
+## Scope
+
+This rule applies whenever you are editing:
+
+- `python-level-2-course/**/*.md`
+- `python-level-2-course/**/*.py`
+
+It is focused on **curriculum, module content, projects, capstones, assignments, and assessments** for Level 2.
+
+## Core Expectations
+
+- **Cover all PCAP sections** (no topic omitted):
+  - Section 1 – Modules and Packages (1.1–1.5): import variants, dir(), sys.path, math/random/platform, user-defined modules/packages, __init__.py, __name__, __pycache__
+  - Section 2 – Exceptions (2.1–2.2): except variants, hierarchy, raise/assert, self-defined exceptions
+  - Section 3 – Strings (3.1–3.3): encoding, ord()/chr(), indexing/slicing, built-in string methods
+  - Section 4 – Object-Oriented Programming (4.1–4.6): class, object, instance/class vars, methods, inheritance, polymorphism, constructors
+  - Section 5 – Miscellaneous (5.1–5.5): list comprehensions, lambdas, closures, map()/filter(), I/O (open, streams, text/binary, bytearray)
+- **Use PCAP terminology correctly** and map content to objective codes (e.g. PCAP-31-03 4.2).
+- **Keep content exam-aligned but job-focused**: every syllabus topic must be explicitly taught, practiced in code, and tied to a realistic use case.
+
+## Design Principles
+
+- Do not water down to purely academic examples; prefer multi-module tools, OOP design, and production-style error handling.
+- Tie each topic to PCAP objectives in section headers or notes.
+- Layer in PEP 8, modular design, testing mindset, and logging where appropriate.
+
+## Checklist Before Finalizing Content
+
+- [ ] Every relevant objective and sub-bullet from Level_2.pdf for that module/section is covered.
+- [ ] Examples are realistic; terminology matches Level_2.pdf.
+- [ ] Professional practices are visible; artifact supports exam readiness (PCAP) and job readiness.

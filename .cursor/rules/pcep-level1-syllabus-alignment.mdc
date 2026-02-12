@@ -1,0 +1,72 @@
+---
+description: Keep the Python Level 1 course aligned with the official PCEP-30-02 syllabus in Level_1.pdf when designing curriculum, modules, projects, and assessments.
+globs: python-level-1-course/**/*.{md,py}
+alwaysApply: false
+---
+
+# PCEP Level 1 Syllabus Alignment
+
+When working on the **Python Level 1 course** in this repository, always treat `Level_1.pdf` (PCEP-30-02 exam syllabus) as the authoritative reference for required exam topics and terminology.
+
+## Scope
+
+This rule applies whenever you are editing:
+
+- `python-level-1-course/**/*.md`
+- `python-level-1-course/**/*.py`
+
+It is focused on **curriculum, module content, projects, capstones, assignments, and assessments** for Level 1.
+
+## Core Expectations
+
+- **Cover all PCEP sections**:
+  - Section 1 – Computer Programming and Python Fundamentals
+  - Section 2 – Control Flow – Conditional Blocks and Loops
+  - Section 3 – Data Collections – Tuples, Dictionaries, Lists, and Strings
+  - Section 4 – Functions and Exceptions
+- **Use PCEP terminology correctly**:
+  - Terms like *lexis, syntax, semantics*, *literals*, *numeral systems*, *exception hierarchy*, etc., should be used consistently with `Level_1.pdf`.
+- **Keep content exam-aligned but job-focused**:
+  - Every topic that appears in the PCEP syllabus must be:
+    - Explicitly taught.
+    - Practiced through code.
+    - Mapped to at least one real-world or production-style use case.
+
+## Design Principles
+
+When editing Level 1 course files:
+
+- **Do not water down concepts** to purely academic examples. Prefer:
+  - CLI tools, data processing, simple business rules, and small systems.
+- **Tie each topic to PCEP objectives**:
+  - Make the mapping visible (e.g., “PCEP 1.3 – Literals and Variables” section headers or notes).
+- **Layer in professional practices** on top of PCEP:
+  - PEP 8 and naming conventions.
+  - Modular design and separation of concerns.
+  - Basic testing, logging, and input validation.
+  - Git and iterative development.
+
+## Concrete Examples
+
+- When teaching **operators** (PCEP 1.4):
+  - Go beyond arithmetic drills; use realistic calculations (e.g., discounts, taxes, thresholds).
+  - Include precedence pitfalls and floating-point edge cases (as flagged in the syllabus).
+
+- When teaching **lists/dicts/tuples** (PCEP 3.x):
+  - Use domain data (students, inventory, expenses, logs) rather than abstract numbers-only lists.
+  - Show how structure choice (list vs tuple vs dict) affects maintainability and correctness.
+
+- When teaching **functions and exceptions** (PCEP 4.x):
+  - Emphasize decomposition, single responsibility, and clear function signatures.
+  - Show `try/except` not just as a language feature but as part of a defensive, production mindset.
+
+## Checklist Before Finalizing Content
+
+For any significant Level 1 course artifact (module guide, project spec, rubric, etc.):
+
+- [ ] All relevant PCEP objectives are explicitly covered or referenced.
+- [ ] Examples connect theory to realistic workflows or problems.
+- [ ] Terminology and topic boundaries match `Level_1.pdf`.
+- [ ] Professional practices (PEP 8, modularity, testing/logging mindset) are visible.
+- [ ] The artifact supports both **exam readiness (PCEP)** and **job readiness**.
+
