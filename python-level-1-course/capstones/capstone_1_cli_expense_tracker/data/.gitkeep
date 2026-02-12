@@ -1,0 +1,2 @@
+# Keep this directory in Git so that data/ exists for JSON expense storage.
+# Expense files (e.g. expenses.json) can be created here at runtime.

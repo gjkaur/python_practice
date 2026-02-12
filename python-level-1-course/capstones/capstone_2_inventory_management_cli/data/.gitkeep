@@ -1,0 +1,2 @@
+# Keep this directory in Git so that data/ exists for JSON inventory storage.
+# Inventory files (e.g. inventory.json) can be created here at runtime.
