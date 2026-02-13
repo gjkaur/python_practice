@@ -1,0 +1,83 @@
+---
+description: Ensures Level 3 course content aligns with PCPP-32-101 syllabus objectives
+globs: level3_planning/**/*.md, python-level-3-course/**/*.py, python-level-3-course/**/*.md
+alwaysApply: false
+---
+
+# PCPP Level 3 Syllabus Alignment
+
+When working on Level 3 course content, ensure all materials align with the official PCPP-32-101 exam syllabus (`Level_3.pdf`).
+
+## PCPP Objective Coverage
+
+All course content must explicitly reference PCPP objectives (1.1–5.2):
+
+- **Section 1 (1.1–1.12)**: Advanced Object-Oriented Programming
+- **Section 2 (2.1–2.3)**: Coding Conventions & Best Practices
+- **Section 3 (3.1–3.3)**: GUI Programming
+- **Section 4 (4.1–4.4)**: Network Programming
+- **Section 5 (5.1–5.2)**: File Processing & Environment
+
+## Code Examples
+
+When creating code examples:
+
+- Tag examples with PCPP objectives: `# PCPP 1.2: Magic methods`
+- Ensure examples demonstrate the exact concepts listed in the syllabus
+- Include edge cases and common mistakes mentioned in the syllabus
+
+## Project Specifications
+
+All mini projects and capstones must:
+
+- List which PCPP objectives they cover
+- Include acceptance criteria that verify objective coverage
+- Provide extensions that deepen understanding of objectives
+
+## Assessment Questions
+
+Quiz and exam questions should:
+
+- Map directly to PCPP objectives
+- Use terminology from the official syllabus
+- Test understanding at the depth required by the exam
+
+## Documentation Standards
+
+- Module content documents should reference PCPP objectives in lesson headers
+- Project specs should include "PCPP Objectives" section
+- Rubrics should track objective coverage
+
+## Example
+
+```python
+# PCPP 1.2: Magic methods - Comparison methods
+class Point:
+    """Point class demonstrating __eq__ and __lt__ magic methods."""
+    
+    def __init__(self, x: int, y: int) -> None:
+        self.x = x
+        self.y = y
+    
+    def __eq__(self, other: object) -> bool:
+        """PCPP 1.2: Comparison method for equality."""
+        if not isinstance(other, Point):
+            return NotImplemented
+        return self.x == other.x and self.y == other.y
+    
+    def __lt__(self, other: 'Point') -> bool:
+        """PCPP 1.2: Comparison method for less-than."""
+        if not isinstance(other, Point):
+            return NotImplemented
+        return (self.x ** 2 + self.y ** 2) < (other.x ** 2 + other.y ** 2)
+```
+
+## Verification Checklist
+
+Before finalizing any Level 3 content:
+
+- [ ] All PCPP objectives (1.1–5.2) are covered in at least one module
+- [ ] Code examples include PCPP objective tags
+- [ ] Projects list covered objectives
+- [ ] Assessment questions map to objectives
+- [ ] Terminology matches official syllabus
