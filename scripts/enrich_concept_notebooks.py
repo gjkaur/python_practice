@@ -5,6 +5,8 @@ import json
 import re
 from pathlib import Path
 
+import nbformat
+
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = "**Additional Example**"
 
@@ -330,9 +332,9 @@ def enrich_notebook(path: Path, examples: dict) -> int:
         inserted += len(new_cells)
 
     nb["cells"] = cells
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(nb, f, indent=2, ensure_ascii=False)
-        f.write("\n")
+    notebook = nbformat.from_dict(nb)
+    with path.open("w", encoding="utf-8", newline="\n") as f:
+        nbformat.write(notebook, f)
 
     return inserted
 
