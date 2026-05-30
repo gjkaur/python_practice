@@ -3,6 +3,7 @@
 Each module folder contains:
 
 - **M0x_Concepts.ipynb** – Concept-building notebook: headings, explanations, runnable code aligned with PCAP-31-03 (Level_2.pdf).
+- **M0x_Concepts.preview.html** – Static HTML preview (use on GitHub if the `.ipynb` preview shows "An error occurred").
 - **examples/*.py** – Small runnable scripts illustrating the module.
 - **practice/practice_0x_*.py** – Guided practice; fill in TODOs and run.
 

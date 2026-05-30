@@ -4,6 +4,7 @@ Each module folder contains:
 
 - **Concept building (Jupyter)**
   - `M0x_Concepts.ipynb` – Markdown cells for headings, explanations, and syntax; code cells for runnable examples. Use for learning and teaching.
+  - `M0x_Concepts.preview.html` – Static HTML preview (use this on GitHub if the `.ipynb` preview shows "An error occurred").
 
 - **Example programs (.py)**
   - `examples/*.py` – Small, runnable scripts that illustrate the module’s ideas. Run from the module folder or adjust paths as needed.
@@ -31,7 +32,7 @@ modules/
 
 ## How to use
 
-1. **Concepts**: Open the module’s `M0x_Concepts.ipynb` in Jupyter or VS Code and run the cells.
+1. **Concepts**: Open the module’s `M0x_Concepts.ipynb` in Jupyter or VS Code and run the cells. On GitHub, click `M0x_Concepts.preview.html` instead if the notebook preview fails.
 2. **Examples**: Run `python examples/<file>.py` from the module directory.
 3. **Practice**: Edit `practice/practice_0x_*.py`, implement the requested logic, then run the file.
 

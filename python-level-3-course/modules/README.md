@@ -8,6 +8,7 @@ Each module directory contains:
 
 - `M##_Module_Name.md` - Module guide with learning objectives and topics
 - `M##_Concepts.ipynb` - Jupyter notebook with concepts and examples (optional)
+- `M##_Concepts.preview.html` - Static HTML preview for GitHub when `.ipynb` preview fails
 - `examples/` - Example code demonstrating module concepts
 - `practice/` - Practice exercises for students
 
